@@ -1,0 +1,126 @@
+:root {
+    --bg-color: #1f1f37;
+    --primary-color: #10F4AF;
+    --white: #ffffff;
+    --accent1: #49C7C8;
+    --accent2: #9B86ED;
+    --accent3: #63B2D4;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Mont', sans-serif;
+    color: var(--white);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0 1rem;
+  /* Full height */
+  height: 100%; 
+  width: auto;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section {
+    height: fit-content;
+
+}
+.navbar {
+    background-color: transparent;
+    }
+.nav-menu {
+    background-color: transparent;
+   padding: 1rem 5rem;
+    z-index: 10; 
+}
+
+@media (max-width:998px) {
+    .nav-menu {
+        padding: 1rem 0;
+    }
+
+    
+    
+}
+
+.nav-menu .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+}
+
+/* Initial navbar style */
+.navbar {
+    transition: all 0.3s ease; /* Smooth transition for background change */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* Style changes when scrolled */
+.navbar.scrolled {
+    background-color: #3333336a;  /* Dark background when scrolled */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 12px;
+}
+
+.navbar-toggler-icon{
+    color: #ffffff;
+    border-color: var(--white);
+}
+
+
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+    position: relative;
+    height:100vh ;
+}
+
+.hero-section .background-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#about  {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+#about .about-brief {
+ padding-top: 200px;
+
+}
+#about h2 {
+    font-size: 3rem;
+}
+
+@media (max-width:768px) {
+    
+    #about .about-brief {
+        padding-top: 0;
+       
+       }
+}
+
