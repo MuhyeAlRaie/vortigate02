@@ -96,9 +96,22 @@ section {
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
     color: var(--primary-color);
+    
+}
+.hero-content p { 
+
+    font-size: 2rem;
+}
+
+.sent-01 {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    font-size: 6rem;
+    color: #10F4AF;
 }
 
 #about  {
