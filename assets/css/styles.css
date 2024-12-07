@@ -125,7 +125,9 @@ footer li, a {
     
 }
 
-/* homepage */
+/***************************************
+ Homepage 
+ ***************************************/
 .navbar {
     background-color: transparent;
     }
@@ -662,4 +664,39 @@ footer li, a {
 
 #contact-us a:hover {
   color: var(--accent1);
+}
+
+
+/* ************************************
+Inner-page 
+***************************************/
+
+
+/* Hero Section */
+.inner-hero {
+  background-color: var(--bg-color);
+  color: var(--white);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.inner-hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb a {
+  color: var(--accent1);
+}
+
+.breadcrumb .active {
+  color: var(--white);
 }
