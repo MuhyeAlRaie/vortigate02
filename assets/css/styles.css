@@ -693,10 +693,74 @@ Inner-page
   margin-bottom: 0;
 }
 
-.breadcrumb a {
-  color: var(--accent1);
+.breadcrumb-item a {
+  color: #63B2D4;
 }
 
 .breadcrumb .active {
   color: var(--white);
+}
+
+/* Content Section */
+.inner-content {
+  justify-content: center;
+  align-items: center;
+}
+.inner-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.inner-content p {
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+/* Call to Action Footer */
+.inner-cta {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.inner-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.promotions {
+  margin-top: 2rem;
+}
+
+.promotion-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.promotion-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.promotion-card .card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.promotion-card .card-body {
+  text-align: center;
+}
+
+.promotion-card .btn {
+  margin-top: 0.5rem;
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.promotion-card .btn:hover {
+  background-color: var(--accent1);
 }
