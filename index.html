@@ -294,6 +294,93 @@
     </div>
   </section>
 
+  <section class="py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Slider Column -->
+            <div class="col-md-8">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card news-card">
+                                        <img src="https://via.placeholder.com/150" alt="News Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">News Title 1</h5>
+                                            <p class="card-text">Brief description of the news goes here.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card news-card">
+                                        <img src="https://via.placeholder.com/150" alt="News Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">News Title 2</h5>
+                                            <p class="card-text">Brief description of the news goes here.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card news-card">
+                                        <img src="https://via.placeholder.com/150" alt="News Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">News Title 3</h5>
+                                            <p class="card-text">Brief description of the news goes here.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card news-card">
+                                        <img src="https://via.placeholder.com/150" alt="News Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">News Title 5</h5>
+                                            <p class="card-text">Brief description of the news goes here.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card news-card">
+                                        <img src="https://via.placeholder.com/150" alt="News Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title">News Title 4</h5>
+                                            <p class="card-text">Brief description of the news goes here.</p>
+                                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more cards as needed -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Navigation -->
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+            </div>
+            <!-- Right Column for Other Content -->
+            <div class="col-md-4">
+                <h3 class="mb-4">Latest Updates</h3>
+                <p>Include additional content such as summaries, links to other news, or static text related to the latest updates.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
   
 
     <!-- Footer -->
@@ -383,7 +470,7 @@
     const clientsSwiper = new Swiper('.clients-swiper', {
       loop: true,
       autoplay: {
-        delay: 3000, // 3 seconds
+        delay: 2000, // 3 seconds
         disableOnInteraction: false,
       },
       slidesPerView: 5, // Show 5 logos at a time
@@ -398,5 +485,23 @@
       },
     });
   </script>
+    <script>
+        const newsSwiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 </html>
