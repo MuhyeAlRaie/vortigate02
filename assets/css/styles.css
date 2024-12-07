@@ -702,19 +702,21 @@ Inner-page
   z-index: 2;
   margin-top: 6rem;
 
+
 }
 
 .breadcrumb {
   position: relative;
   background: none;
-  
   justify-content: center;
   z-index: 2;
 }
 
 
-.breadcrumb-item a {
-  color: #63B2D4;
+ .breadcrumb-item  a {
+  color: #10F4AF;
+  text-decoration: none;
+  color: var(--white);
 }
 
 .breadcrumb .active {
@@ -783,4 +785,97 @@ Inner-page
 
 .promotion-card .btn:hover {
   background-color: var(--accent1);
+}
+
+
+/* ********************************
+About us Page
+***********************************/
+
+.strategic-direction h2 {
+  color: #63B2D4;
+  font-size: 3rem;
+}
+
+.strategic-direction .card-body {
+
+  background-color: #1f1f37;
+  align-items: center;
+  justify-content: center;
+}
+
+.strategic-direction .card-body .card-title {
+color: var(--white);
+  background-color: #49C7C8;
+  border-radius: 12px;
+  height: 100px;
+  text-align: center;
+  padding: 35px;
+}
+
+.strategic-direction .card-body .card-text {
+  color: var(--white);
+  font-size: 1.3rem;
+  text-align: justify;
+  }
+
+  /* Core Values Section */
+.core-values {
+  padding: 3rem 0;
+  /* background-color: #f9f9f9; */
+}
+
+.core-values h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #63B2D4;
+}
+
+.core-values p {
+  color: var(--white);
+}
+
+.core-values .value-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.core-values .value-title {
+  background-color: #007bff; /* Default background color */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  height: 64px;
+  width: 140px;
+  text-align: center;
+}
+
+.core-values .value-title.bg-primary {
+  background-color: #007bff;
+}
+
+.core-values .value-title.bg-success {
+  background-color: #28a745;
+}
+
+.core-values .value-title.bg-danger {
+  background-color: #dc3545;
+}
+
+.core-values .value-title.bg-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.core-values .value-title.bg-info {
+  background-color: #17a2b8;
+}
+
+.core-values .value-item p {
+  margin: 0;
+  color: var(--white);
 }
