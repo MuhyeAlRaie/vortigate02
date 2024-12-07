@@ -672,26 +672,46 @@ Inner-page
 ***************************************/
 
 
-/* Hero Section */
 .inner-hero {
   background-color: var(--bg-color);
   color: var(--white);
   background-size: cover;
   background-position: center;
   position: relative;
+  padding: 3rem 1rem; /* Reduced padding to make it visually smaller */
+  height: 50vh; /* Set height to half of full viewport */
+  text-align: center;
+}
+
+.inner-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 31, 55, 0.8); /* Overlay */
+  z-index: 1;
 }
 
 .inner-hero h1 {
-  font-size: 3rem;
+  position: relative;
+  font-size: 2.5rem; /* Adjusted font size */
   font-weight: bold;
   color: var(--primary-color);
+  z-index: 2;
+  margin-top: 6rem;
+
 }
 
 .breadcrumb {
+  position: relative;
   background: none;
-  padding: 0;
-  margin-bottom: 0;
+  
+  justify-content: center;
+  z-index: 2;
 }
+
 
 .breadcrumb-item a {
   color: #63B2D4;
