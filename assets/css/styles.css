@@ -818,3 +818,45 @@ color: var(--white);
   font-size: 1.3rem;
   text-align: justify;
   }
+
+  .core-value-r {
+
+    border-left: #10F4AF solid 2px;
+    padding-left: 1rem;
+  }
+  .core-value h2 { 
+
+    font-size: 3rem;
+    color: #63B2D4;
+  }
+
+  .core-value-d {
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+
+    .core-value-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--white);
+    height: 200px;
+  }
+
+  .core-value-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .core-value-card h5 {
+    color: var(--accent3);
+  } 
+  .core-value-card p {
+    color: #333;
+    justify-content: center;
+    text-align: justify;
+  }
+
+ .core-value .icon {
+    font-size: 1.5rem; 
+  }
