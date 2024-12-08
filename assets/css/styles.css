@@ -6,6 +6,7 @@
     --accent2: #9B86ED;
     --accent3: #63B2D4;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -850,6 +851,7 @@ color: var(--white);
 
   .core-value-card h5 {
     color: var(--accent3);
+    font-weight: bold;
   } 
   .core-value-card p {
     color: #333;
@@ -859,4 +861,40 @@ color: var(--white);
 
  .core-value .icon {
     font-size: 1.5rem; 
+  }
+
+  .strategic-goals h2 {
+    color: #63B2D4;
+    font-size: 3rem;
+  }
+
+  .strategic-goals-d  {
+    color: var(--white);
+    font-size: 1.5rem;
+  }
+
+  .strategic-goals span {
+    color: #63B2D4;
+
+  }
+
+  .strategic-goals .border-bottom {
+    border-color: #63B2D4;
+  }
+
+  .our-journey h4 {
+    color: #63B2D4;
+    font-weight: 500;
+  }
+
+  .our-journey h2 {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .our-journey p {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: justify;
   }

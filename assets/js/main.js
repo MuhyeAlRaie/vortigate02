@@ -57,3 +57,13 @@ $(terElement).on("mouseenter mouseleave", function() {
     $(".mouse-follower").toggleClass("highlight-cursor-para");
     $(this).toggleClass("highlight-cursor-para");
 });
+
+
+document.querySelectorAll('[data-aos]').forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+      element.classList.remove('aos-animate');
+      setTimeout(() => {
+        element.classList.add('aos-animate');
+      }, 50); // Small delay to re-trigger animation
+    });
+  });
