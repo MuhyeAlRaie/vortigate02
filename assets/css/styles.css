@@ -28,7 +28,7 @@ body {
 
 
 .mouse-follower {
-    z-index: 10;
+    z-index: 998;
 }
 
 .mouse-follower span {
@@ -151,6 +151,11 @@ footer li, a {
     color: #ffffff;
 }
 
+.nav-menu .navbar-nav .nav-item .nav-link:hover {
+  background-color: #63B2D4;
+  border-radius: 4px;
+}
+
 /* Initial navbar style */
 .navbar {
     transition: all 0.3s ease; /* Smooth transition for background change */
@@ -158,6 +163,26 @@ footer li, a {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
+
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  text-align: Left;
+
+
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+
+  background-color: #63B2D4;
+  color: var(--white);
+}
+
 
 
 /* Style changes when scrolled */
@@ -898,3 +923,62 @@ color: var(--white);
     font-size: 1.5rem;
     text-align: justify;
   }
+
+
+
+  /* *****************************************
+  Innovation Streans Pages
+  ********************************************/
+
+  .services-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.services-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px 0;
+    position: relative;
+    flex: 1 1 calc(100% / 5 - 20px);
+    text-align: center;
+}
+
+.services-menu a:hover, .services-menu a.active {
+    color: #007bff;
+}
+
+.services-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+.services-menu a:hover::after, .services-menu a.active::after {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .services-menu a {
+        flex: 1 1 calc(50% - 20px);
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-menu a {
+        flex: 1 1 calc(50% - 20px);
+        font-size: 0.85rem;
+    }
+}
