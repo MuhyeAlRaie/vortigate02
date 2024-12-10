@@ -94,28 +94,63 @@
           <img src="assets/img/vr-s.png" alt="" class="img-fluid" data-aos="fade" data-aos-duration="1500">
           <p>We create immersive VR experiences to engage audiences, improve training outcomes, and showcase products innovatively.</p>
   
-          <div class="container mt-5">
+          <div class="container-fluid mt-5">
             <div class="row">
               <!-- Left Buttons (Top on Mobile) -->
               <div class="col-12 col-md-4 content-buttons order-1 order-md-0">
-                <button class="btn btn-primary w-100 mb-2" onclick="showContent(0)">Button 1</button>
-                <button class="btn btn-primary w-100 mb-2" onclick="showContent(1)">Button 2</button>
-                <button class="btn btn-primary w-100 mb-2" onclick="showContent(2)">Button 3</button>
-                <button class="btn btn-primary w-100 mb-2" onclick="showContent(3)">Button 4</button>
-                <button class="btn btn-primary w-100 mb-2" onclick="showContent(4)">Button 5</button>
-                <button class="btn btn-primary w-100" onclick="showContent(5)">Button 6</button>
+                <button class="btn   mb-2" onclick="showContent(0)"> VR Training & Simulation</button>
+                <button class="btn   mb-2" onclick="showContent(1)">Interactive VR Product Configurators</button>
+                <button class="btn   mb-2" onclick="showContent(2)"> VR 3D Visualization Apps</button>
+                <button class="btn   mb-2" onclick="showContent(3)">VR Tours & Walkthroughs</button>
+                <button class="btn   mb-2" onclick="showContent(4)">Custom VR Content Creation</button>
+                <button class="btn  " onclick="showContent(5)">Immersive VR Gaming Experiences</button>
               </div>
   
               <!-- Right Dynamic Content -->
               <div class="col-12 col-md-8 content-display order-0 order-md-1">
                 <img id="contentImage" src="https://via.placeholder.com/800x300" alt="Content Image" class="img-fluid">
-                <h3 id="contentTitle" class="mt-3">Title 1</h3>
-                <p id="contentParagraph">This is the content for Button 1.</p>
+                <h3 id="contentTitle" class="mt-3">VR Training & Simulation</h3>
+                <p id="contentParagraph">Immerse employees and trainees in realistic virtual environments to practice skills, enhance safety, and boost performance. Our VR training solutions are tailored to meet specific industry needs.</p>
+
+                <ul id="dynamicPoints" class="list-unstyled mt-3">
+                  <li><span class="bi bi-check-circle-fill"></span> Improve employee retention and skill development through immersive experiences.</li>
+                  <li><span class="bi bi-check-circle-fill"></span> Minimize real-world risks by simulating hazardous or high-pressure scenarios.</li>
+                  <li><span  class="bi bi-check-circle-fill"></span> Custom training modules for sectors like healthcare, aviation, and manufacturing.</li>
+                  <li><span  class="bi bi-check-circle-fill"></span> Provide interactive assessments and feedback in real time.</li>
+                </ul>
+
               </div>
             </div>
           </div>
         </div>
       </section>
+
+    
+      <div class="usecases container" data-aos="fade-up" data-aos-duration="1500">
+        <h2>Use Cases</h2>
+       <div class="row">
+        <div class="col-md-3 usecases-card">
+            <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
+          <h5>Education & Training</h5>
+          <p>Simulate environments for skill-building and safety training.</p>
+        </div>
+        <div class="col-md-3 usecases-card">
+          <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
+        <h5>Real Estate & Tourism</h5>
+        <p> Offer virtual property tours and interactive travel experiences.</p>
+      </div>
+      <div class="col-md-3 usecases-card">
+        <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
+      <h5>Healthcare</h5>
+      <p>Conduct virtual surgeries and medical training scenarios.</p>
+    </div>
+    <div class="col-md-3 usecases-card">
+      <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
+    <h5>Retail & Marketing</h5>
+    <p>Showcase products interactively and in 3D for better customer understanding.</p>
+  </div>
+     </div>
+      </div>
     </div>
   </section>
 
@@ -204,33 +239,45 @@
     const content = [
       {
         image: "https://via.placeholder.com/800x300/ff7f7f",
-        title: "Title 1",
-        paragraph: "This is the content for Button 1."
+        title: " VR Training & Simulation",
+        paragraph: "Immerse employees and trainees in realistic virtual environments to practice skills, enhance safety, and boost performance. Our VR training solutions are tailored to meet specific industry needs.",
+        points: [" Improve employee retention and skill development through immersive experiences.", " Minimize real-world risks by simulating hazardous or high-pressure scenarios.", " Custom training modules for sectors like healthcare, aviation, and manufacturing.", " Provide interactive assessments and feedback in real time."]
+
       },
       {
         image: "https://via.placeholder.com/800x300/7fff7f",
-        title: "Title 2",
-        paragraph: "This is the content for Button 2."
+        title: "Interactive VR Product Configurators",
+        paragraph: "Allow customers to explore, customize, and interact with products in an engaging virtual space. Enhance the purchasing experience and simplify complex decision-making processes.",
+        points: [" Showcase products dynamically, with real-time customization options.", " Provide a realistic 3D representation of products for better customer understanding.", " Enable users to visualize their choices in a virtual environment for informed decision-making.", " Offer an immersive shopping experience to increase customer satisfaction and conversion rates."]
+
       },
       {
         image: "https://via.placeholder.com/800x300/7f7fff",
-        title: "Title 3",
-        paragraph: "This is the content for Button 3."
+        title: " VR 3D Visualization Apps",
+        paragraph: "Transform your ideas into stunning, interactive 3D visualizations that help communicate designs, concepts, and products effectively.",
+        points: [" Create lifelike representations of products, architecture, and industrial designs.", " Support marketing and presentation efforts with visually compelling content.", " Enhance client understanding and decision-making with interactive elements.", " Showcase prototypes or concepts before committing to production."]
+
       },
       {
         image: "https://via.placeholder.com/800x300/ffff7f",
-        title: "Title 4",
-        paragraph: "This is the content for Button 4."
+        title: "VR Tours & Walkthroughs",
+        paragraph: "Offer immersive virtual tours and walkthroughs for real estate, tourism, and event spaces, providing users with a lifelike experience from anywhere in the world.",
+        points: [" Allow potential clients to explore properties remotely in 360-degree detail.", " Highlight key features of venues, properties, or landmarks effectively.", " Attract international audiences with accessible, high-quality VR experiences.", " Save time and resources by eliminating the need for physical tours."]
+
       },
       {
         image: "https://via.placeholder.com/800x300/7fffff",
-        title: "Title 5",
-        paragraph: "This is the content for Button 5."
+        title: "Custom VR Content Creation",
+        paragraph: "Create tailored VR experiences to suit your brand’s goals, from marketing campaigns to training modules, designed to captivate and engage your audience.",
+        points: [" Develop branded VR experiences for immersive storytelling and marketing.", " Customize content to fit specific industries and business objectives.", " Leverage VR to increase customer engagement and retention.", " Build memorable experiences that differentiate your brand from competitors."]
+
       },
       {
         image: "https://via.placeholder.com/800x300/ff7fff",
-        title: "Title 6",
-        paragraph: "This is the content for Button 6."
+        title: "Immersive VR Gaming Experiences",
+        paragraph: "Develop engaging and interactive VR games that captivate users with immersive storytelling, realistic graphics, and unparalleled gameplay experiences.",
+        points: [" Create custom games tailored for entertainment, training, or education.", " Engage users with high-quality graphics and immersive soundscapes.", " Integrate gamification elements for learning and skill development.", " Provide unique multiplayer experiences for enhanced social interaction."]
+
       }
     ];
   
@@ -239,7 +286,16 @@
       document.getElementById('contentImage').src = content[index].image;
       document.getElementById('contentTitle').textContent = content[index].title;
       document.getElementById('contentParagraph').textContent = content[index].paragraph;
+
+          // Update Points
+    const pointsList = document.getElementById('dynamicPoints');
+    pointsList.innerHTML = content[index].points
+      .map(point => `<li><span  class="bi bi-check-circle-fill"></span> ${point}</li>`)
+      .join("");
+  
     }
+
+    
   </script>
 </body>
 </html>

@@ -934,14 +934,14 @@ color: var(--white);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #f8f9fa;
+    background-color: #49C7C8;
     padding: 15px 0;
     border-bottom: 1px solid #ddd;
 }
 
 .services-menu a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 1rem;
     margin: 10px;
     padding: 10px 0;
@@ -951,7 +951,7 @@ color: var(--white);
 }
 
 .services-menu a:hover, .services-menu a.active {
-    color: #007bff;
+    color: #fff;
 }
 
 .services-menu a::after {
@@ -961,7 +961,7 @@ color: var(--white);
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #007bff;
+    background-color: #10F4AF;
     transition: width 0.3s ease-in-out;
 }
 
@@ -995,11 +995,21 @@ Service page
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #description-section h2 {
   color: var(--primary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem; 
+  text-align: center;
+  font-size: 3rem;
+}
+#description-section p {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .content-section {
@@ -1009,17 +1019,89 @@ Service page
   width: 20%;
   padding: 10px;
 }
+
 .content-buttons button {
   width: 100%;
   margin-bottom: 10px;
 }
+
+.content-buttons .btn {
+  background-color: transparent;
+
+  border-bottom: 2px solid #49C7C8;
+  color: #fff;
+  height: 100px;
+
+}
 .content-display {
   width: 80%;
   padding: 20px;
-  border-left: 2px solid #ccc;
+  border-left: 2px solid #10F4AF;
+  
 }
 .content-image {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
 }
+
+
+
+.content-display li  {
+text-indent: 20px;
+color:var(--white);
+font-size: 1.3rem; 
+line-height: 2;
+text-align: left;
+
+}
+
+.content-display li span {
+  color:var(--primary-color) ;
+  font-size: 1.3rem;
+}
+
+.content-display h3 {
+  font-size: 2.5rem;
+
+  color: #49C7C8;
+}
+
+
+
+.usecases h2 {
+ font-size: 3rem;
+ text-align: center;
+}
+.usecases-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center !important;
+  align-items: center !important;
+  border: 1px solid #ddd;
+ 
+}
+
+.usecases-card:hover {
+  transform: scale(1.05);
+  border-radius: 8px;
+}
+
+.usecases-card h5 {
+  color: #49C7C8;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.usecases-card p {
+color: #333;
+text-align: justify;
+}
+.usecases-card  img {
+  display: flex;
+height: 100px;
+width: 100px;
+
+}
+
