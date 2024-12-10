@@ -98,25 +98,25 @@
             <div class="row">
               <!-- Left Buttons (Top on Mobile) -->
               <div class="col-12 col-md-4 content-buttons order-1 order-md-0">
-                <button class="btn   mb-2" onclick="showContent(0)"> VR Training & Simulation</button>
-                <button class="btn   mb-2" onclick="showContent(1)">Interactive VR Product Configurators</button>
-                <button class="btn   mb-2" onclick="showContent(2)"> VR 3D Visualization Apps</button>
-                <button class="btn   mb-2" onclick="showContent(3)">VR Tours & Walkthroughs</button>
-                <button class="btn   mb-2" onclick="showContent(4)">Custom VR Content Creation</button>
-                <button class="btn  " onclick="showContent(5)">Immersive VR Gaming Experiences</button>
+                <button class="btn   mb-2" onclick="showContent(0)"> AR Training & Simulation</button>
+                <button class="btn   mb-2" onclick="showContent(1)">Augmented Product Configurators</button>
+                <button class="btn   mb-2" onclick="showContent(2)"> AR Visual Presentations</button>
+                <button class="btn   mb-2" onclick="showContent(3)"> AR for Real Estate and Interior Design</button>
+                <button class="btn   mb-2" onclick="showContent(4)">Web-Based AR Applications</button>
+                <button class="btn  " onclick="showContent(5)">AR Games and Virtual Try-On Features</button>
               </div>
   
               <!-- Right Dynamic Content -->
               <div class="col-12 col-md-8 content-display order-0 order-md-1">
                 <img id="contentImage" src="https://via.placeholder.com/800x300" alt="Content Image" class="img-fluid">
-                <h3 id="contentTitle" class="mt-3">VR Training & Simulation</h3>
-                <p id="contentParagraph">Immerse employees and trainees in realistic virtual environments to practice skills, enhance safety, and boost performance. Our VR training solutions are tailored to meet specific industry needs.</p>
+                <h3 id="contentTitle" class="mt-3">AR Training & Simulation</h3>
+                <p id="contentParagraph">Enhance learning and skill development through augmented environments that overlay digital elements onto the physical world.</p>
 
                 <ul id="dynamicPoints" class="list-unstyled mt-3">
-                  <li><span class="bi bi-check-circle-fill"></span> Improve employee retention and skill development through immersive experiences.</li>
-                  <li><span class="bi bi-check-circle-fill"></span> Minimize real-world risks by simulating hazardous or high-pressure scenarios.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Custom training modules for sectors like healthcare, aviation, and manufacturing.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Provide interactive assessments and feedback in real time.</li>
+                  <li><span class="bi bi-check-circle-fill"></span> Create realistic, interactive training experiences for various industries.</li>
+                  <li><span class="bi bi-check-circle-fill"></span> Improve safety and efficiency by simulating complex scenarios in real time.</li>
+                  <li><span  class="bi bi-check-circle-fill"></span> Enable step-by-step guidance for on-site tasks through AR overlays.</li>
+                  <li><span  class="bi bi-check-circle-fill"></span> Deliver cost-effective, scalable training solutions for diverse sectors.</li>
                 </ul>
 
               </div>
@@ -235,6 +235,69 @@
     offset: 200,    // Trigger offset in pixels
 });
     </script>
+    <script>
+        // Array of content
+        const content = [
+          {
+            image: "https://via.placeholder.com/800x300/ff7f7f",
+            title: "AR Training & Simulation",
+            paragraph: "Enhance learning and skill development through augmented environments that overlay digital elements onto the physical world.",
+            points: [" Create realistic, interactive training experiences for various industries.", " Improve safety and efficiency by simulating complex scenarios in real time.", " Enable step-by-step guidance for on-site tasks through AR overlays.", " Deliver cost-effective, scalable training solutions for diverse sectors."]
+    
+          },
+          {
+            image: "https://via.placeholder.com/800x300/7fff7f",
+            title: "Augmented Product Configurators",
+            paragraph: "Empower customers to visualize and personalize products in their real-world environments using AR technology.",
+            points: [" Allow users to see products in their intended space with accurate dimensions.", " Provide real-time customization options for colors, sizes, and features.", " Increase buyer confidence by offering an interactive, hands-on experience.", " Integrate with e-commerce platforms for a seamless shopping journey."]
+    
+          },
+          {
+            image: "https://via.placeholder.com/800x300/7f7fff",
+            title: " AR Visual Presentations",
+            paragraph: "Bring concepts, designs, and data to life with interactive augmented reality presentations.",
+            points: [" Create lifelike representations of products, architecture, and industrial designs.", " Support marketing and presentation efforts with visually compelling content.", " Enhance client understanding and decision-making with interactive elements.", " Showcase prototypes or concepts before committing to production."]
+    
+          },
+          {
+            image: "https://via.placeholder.com/800x300/ffff7f",
+            title: "VR Tours & Walkthroughs",
+            paragraph: "Offer immersive virtual tours and walkthroughs for real estate, tourism, and event spaces, providing users with a lifelike experience from anywhere in the world.",
+            points: [" Allow potential clients to explore properties remotely in 360-degree detail.", " Highlight key features of venues, properties, or landmarks effectively.", " Attract international audiences with accessible, high-quality VR experiences.", " Save time and resources by eliminating the need for physical tours."]
+    
+          },
+          {
+            image: "https://via.placeholder.com/800x300/7fffff",
+            title: "Custom VR Content Creation",
+            paragraph: "Create tailored VR experiences to suit your brand’s goals, from marketing campaigns to training modules, designed to captivate and engage your audience.",
+            points: [" Develop branded VR experiences for immersive storytelling and marketing.", " Customize content to fit specific industries and business objectives.", " Leverage VR to increase customer engagement and retention.", " Build memorable experiences that differentiate your brand from competitors."]
+    
+          },
+          {
+            image: "https://via.placeholder.com/800x300/ff7fff",
+            title: "Immersive VR Gaming Experiences",
+            paragraph: "Develop engaging and interactive VR games that captivate users with immersive storytelling, realistic graphics, and unparalleled gameplay experiences.",
+            points: [" Create custom games tailored for entertainment, training, or education.", " Engage users with high-quality graphics and immersive soundscapes.", " Integrate gamification elements for learning and skill development.", " Provide unique multiplayer experiences for enhanced social interaction."]
+    
+          }
+        ];
+      
+        // Function to display content
+        function showContent(index) {
+          document.getElementById('contentImage').src = content[index].image;
+          document.getElementById('contentTitle').textContent = content[index].title;
+          document.getElementById('contentParagraph').textContent = content[index].paragraph;
+    
+              // Update Points
+        const pointsList = document.getElementById('dynamicPoints');
+        pointsList.innerHTML = content[index].points
+          .map(point => `<li><span  class="bi bi-check-circle-fill"></span> ${point}</li>`)
+          .join("");
+      
+        }
+    
+        
+      </script>
 
 </body>
 </html>
