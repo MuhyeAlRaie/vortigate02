@@ -291,6 +291,7 @@ footer li, a {
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #49C7C8;
 }
 
 .card-body p {
@@ -329,6 +330,12 @@ footer li, a {
 
 .innovation-card:hover .card-body {
     opacity: 1;
+}
+
+.card-header h6 {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: bold;
 }
 
 .showcase-section p {
