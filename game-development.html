@@ -90,32 +90,31 @@
     <div class="container-fluid">
       <section id="description-section" class="py-4">
         <div class="container-fluid">
-          <h2 class="mb-4 text-left">Product Configurators Solutions</h2>
+          <h2 class="mb-4 text-left">Game Development Services</h2>
           <img src="assets/img/vr-s.png" alt="" class="img-fluid" data-aos="fade" data-aos-duration="1500">
-          <p>Enable customers to customize, explore, and interact with products in a virtual or augmented environment.</p>
+          <p>We create immersive games that educate, entertain, and engage users across various industries.</p>
   
           <div class="container-fluid mt-5">
             <div class="row">
               <!-- Left Buttons (Top on Mobile) -->
               <div class="col-12 col-md-4 content-buttons order-1 order-md-0">
-                <button class="btn   mb-2" onclick="showContent(0)"> 3D Product Configurators</button>
-                <button class="btn   mb-2" onclick="showContent(1)"> Web-Based Configurators</button>
-                <button class="btn   mb-2" onclick="showContent(2)"> Mobile Configurators</button>
-                <button class="btn   mb-2" onclick="showContent(3)"> Standalone Configurators</button>
-                <button class="btn   mb-2" onclick="showContent(4)">Interactive AR/VR Configurators</button>
+                <button class="btn   mb-2" onclick="showContent(0)"> Educational Games</button>
+                <button class="btn   mb-2" onclick="showContent(1)"> Serious Games for Training</button>
+                <button class="btn   mb-2" onclick="showContent(2)"> Immersive Gaming Experiences</button>
+                <button class="btn   mb-2" onclick="showContent(3)"> Marketing Solutions Through Games</button>
               </div>
   
               <!-- Right Dynamic Content -->
               <div class="col-12 col-md-8 content-display order-0 order-md-1">
                 <img id="contentImage" src="https://via.placeholder.com/800x300" alt="Content Image" class="img-fluid">
-                <h3 id="contentTitle" class="mt-3">3D Product Configurators</h3>
-                <p id="contentParagraph">Allow users to interact with products in three-dimensional space, enabling real-time customization and visualization.</p>
+                <h3 id="contentTitle" class="mt-3"> Educational Games</h3>
+                <p id="contentParagraph">Design engaging educational games that help learners acquire knowledge and skills through interactive gameplay.</p>
 
                 <ul id="dynamicPoints" class="list-unstyled mt-3">
-                  <li><span class="bi bi-check-circle-fill"></span> Offer detailed 3D views of products from all angles, providing better insights.</li>
-                  <li><span class="bi bi-check-circle-fill"></span> Enhance user experience with interactive tools to modify product features like colors, textures, and sizes.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Enable customers to see and explore products as they would in real life, improving their purchasing decisions.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Integrate with e-commerce systems for a seamless shopping experience.</li>
+                  <li><span class="bi bi-check-circle-fill"></span> Transform traditional learning materials into fun, interactive experiences that captivate students.</li>
+                  <li><span class="bi bi-check-circle-fill"></span> Incorporate quizzes, puzzles, and challenges to test knowledge and encourage problem-solving.</li>
+                  <li><span  class="bi bi-check-circle-fill"></span> Provide real-time feedback and rewards to keep learners motivated and focused.</li>
+                  <li><span  class="bi bi-check-circle-fill"></span> Suitable for schools, universities, and e-learning platforms to create an enjoyable learning environment.</li>
                 </ul>
 
               </div>
@@ -130,23 +129,23 @@
        <div class="row">
         <div class="col-md-3 usecases-card">
             <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
-          <h5>Retail & E-Commerce</h5>
-          <p> Allow customers to customize products like clothing, cars, or furniture in 3D.</p>
+          <h5>Education</h5>
+          <p>Develop interactive learning games for schools and universities.</p>
         </div>
         <div class="col-md-3 usecases-card">
           <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
-        <h5>Manufacturing</h5>
-        <p> Enable customers to personalize industrial products or machinery.</p>
+        <h5>Healthcare</h5>
+        <p> Train medical staff through serious games focused on real-life scenarios.</p>
       </div>
       <div class="col-md-3 usecases-card">
         <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
-      <h5>Automotive</h5>
-      <p>Let car buyers configure their vehicles with custom features and finishes.</p>
+      <h5>Marketing</h5>
+      <p>Create branded games for product launches or promotional campaigns.</p>
     </div>
     <div class="col-md-3 usecases-card">
       <img src="assets/img/Collaboration-icon.png" alt="Collaboration Icon" class="img-fluid" >
-    <h5>Real Estate</h5>
-    <p>Customize home layouts and design features for potential buyers.</p>
+    <h5>Entertainment</h5>
+    <p>Deliver captivating gaming experiences for PC, console, and mobile audiences.</p>
   </div>
      </div>
       </div>
@@ -239,37 +238,30 @@
     const content = [
       {
         image: "https://via.placeholder.com/800x300/ff7f7f",
-        title: "3D Product Configurators",
-        paragraph: "Allow users to interact with products in three-dimensional space, enabling real-time customization and visualization.",
-        points: []
+        title: " Educational Games",
+        paragraph: "Design engaging educational games that help learners acquire knowledge and skills through interactive gameplay.",
+        points: [" Transform traditional learning materials into fun, interactive experiences that captivate students."," Incorporate quizzes, puzzles, and challenges to test knowledge and encourage problem-solving."," Provide real-time feedback and rewards to keep learners motivated and focused."," Suitable for schools, universities, and e-learning platforms to create an enjoyable learning environment."]
 
       },
       {
         image: "https://via.placeholder.com/800x300/7fff7f",
-        title: " Web-Based Configurators",
-        paragraph: "Deliver interactive product configuration tools directly through a web browser, without the need for downloads.",
-        points: []
+        title: " Serious Games for Training",
+        paragraph: "Develop serious games specifically designed to train employees and professionals in a wide range of industries.",
+        points: [" Simulate real-world situations and scenarios to provide hands-on experience in a safe, controlled environment."," Allow users to practice complex procedures, decision-making, and teamwork through gamified simulations."," Increase retention and performance by engaging learners with dynamic, interactive content."," Ideal for industries like healthcare, aviation, manufacturing, and defense, where practical skills are essential."]
 
       },
       {
         image: "https://via.placeholder.com/800x300/7f7fff",
-        title: " Mobile Configurators",
-        paragraph: "Enable users to configure and personalize products on-the-go through mobile applications.",
-        points: []
+        title: " Immersive Gaming Experiences",
+        paragraph: "Create fully immersive, interactive gaming experiences using cutting-edge technologies like VR and AR.",
+        points: [" Design games that transport users into lifelike, virtual environments, providing an unparalleled sense of presence."," Engage users with compelling narratives, realistic interactions, and challenging gameplay."," Develop games that cater to both entertainment and educational purposes, offering high engagement with immersive worlds."," Suitable for entertainment, training, or team-building events, providing a deep, engaging experience."]
 
       },
       {
         image: "https://via.placeholder.com/800x300/ffff7f",
-        title: " Standalone Configurators",
-        paragraph: "Provide dedicated, offline product configuration tools that run as standalone applications or kiosks.",
-        points: []
-
-      },
-      {
-        image: "https://via.placeholder.com/800x300/7fffff",
-        title: "Interactive AR/VR Configurators",
-        paragraph: "Combine augmented reality (AR) and virtual reality (VR) technologies to offer fully immersive product customization experiences.",
-        points: []
+        title: " Marketing Solutions Through Games",
+        paragraph: "Leverage the power of gaming to create innovative marketing campaigns that engage and convert customers.",
+        points: [" Use gamification elements such as challenges, rewards, and leaderboards to promote products and services."," Create branded games or game-based experiences to boost customer interaction and brand loyalty."," Integrate games with social media platforms for viral marketing campaigns that spread organically."," Provide a unique and fun way for customers to experience a brand, increasing brand recognition and customer engagement."]
 
       }
     ];
