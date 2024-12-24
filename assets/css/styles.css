@@ -368,18 +368,20 @@ footer li, a {
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     position: relative;
+    margin-right: 10px;
+    border-radius: 8px;
   }
 
   .showcase-section  .content {
     color: white;
-    text-align: center;
+    text-align: left;
     z-index: 2;
     max-width: 90%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
+    padding: 0;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent background for text visibility */
     border-radius: 10px;
   }
 
@@ -387,6 +389,7 @@ footer li, a {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: var(--white);
   }
 
   .showcase-section  .content p {
@@ -394,9 +397,17 @@ footer li, a {
     margin: 10px 0;
   }
 
+  .showcase-section  .content p span{
+    font-size: 1rem;
+    margin: 10px 0;
+    border: #ffffff 1px solid;
+    margin: 4px;
+    padding: 4px;
+  }
+
   .showcase-section .btn-learn-more {
     padding: 10px 20px;
-    background-color: #FF5722;
+    background-color: #49C7C8;
     color: white;
     border: none;
     cursor: pointer;
@@ -407,7 +418,7 @@ footer li, a {
   }
 
   .showcase-section  .btn-learn-more:hover {
-    background-color: #FF3D00;
+    background-color: #63B2D4;
   }
 
   /* Responsive Styling */
