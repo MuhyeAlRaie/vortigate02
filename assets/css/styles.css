@@ -294,61 +294,66 @@ footer li, a {
     background-color: #49C7C8;
 }
 
-.card-body p {
-  font-size: 1rem;
-}
-.card-body h5 { 
-  font-size: 1.5rem;
-  color: #63B2D4;
-}
-
-.innovation-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.innovation-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-.innovation-card:hover img {
-    transform: scale(1.1);
-}
-
-.innovation-card .card-body {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.innovation-card:hover .card-body {
-    opacity: 1;
-}
-
-.card-header h6 {
-  font-size: 2rem;
+.innovation-streams-section p{
   color: var(--white);
-  /* font-weight: 700; */
-  margin-top: 10px;
+  font-size: 1.5rem;
 }
 
-.showcase-section p {
-    font-size: 1.5rem;
-    color: var(--white);
-    margin: 0 auto;
+.innovation-streams {
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.innovation-item {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  background-color: #63B2D4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.innovation-item img {
+  width: 80px;
+  height: 80px;
+}
+.innovation-item h3 {
+color: #333;
+}
+.innovation-item:hover {
+  transform: scale(1.1);
+}
+.innovation-item span {
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.innovation-streams.hover-effect .innovation-item {
+  opacity: 0.2;
+}
+.innovation-streams.hover-effect .innovation-item:hover {
+  opacity: 1;
 }
 .showcase-section h2 {
     color: #63B2D4;
     font-weight: bold;
     font-size: 3rem;
+}
+
+.showcase-section p {
+  color: var(--white);
+  font-size: 1.5rem;
 }
 .showcase-section {
     width: 100%;
