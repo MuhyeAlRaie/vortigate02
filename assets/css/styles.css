@@ -273,25 +273,10 @@ footer li, a {
        }
 }
 
-#innovation-streams p {
-    font-size: 1.5rem;
-    color: var(--white);
-    margin: 0 auto;
-}
-#innovation-streams h2 {
-    color: #63B2D4;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.innovation-card {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #49C7C8;
+.innovation-streams-section h2{
+  color: #63B2D4;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .innovation-streams-section p{
