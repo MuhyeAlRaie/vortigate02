@@ -127,6 +127,42 @@ footer li, a {
     
 }
 
+/* ************************************************
+preloder
+***************************************************/
+
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f37; /* Background color */
+  z-index: 9999; /* Ensure it stays on top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader .preloader-content {
+  text-align: center;
+}
+
+#preloader .preloader-gif {
+  width: 300px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Add animation for fading out the preloader */
+body.preloader-active {
+  overflow: hidden;
+}
+
+body.preloader-inactive #preloader {
+  display: none;
+}
+
 /***************************************
  Homepage 
  ***************************************/

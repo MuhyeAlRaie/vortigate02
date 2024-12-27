@@ -8,6 +8,11 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// preloader 
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.body.classList.add("preloader-inactive");
+  });
 
  // Mouse Follower
  const follower = document.querySelector(
