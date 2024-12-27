@@ -8,10 +8,9 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// preloader 
-
-document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("preloader-inactive");
+// preloader
+window.addEventListener("load", function () {
+    document.getElementById("preloader").style.display = "none";
   });
 
  // Mouse Follower
