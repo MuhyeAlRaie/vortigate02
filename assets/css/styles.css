@@ -110,6 +110,7 @@ section {
 
 }
 
+
 /* footer */
 
 footer h5 {
@@ -1117,3 +1118,90 @@ width: 100px;
 
 }
 
+/* ***********************************
+partnership page 
+**************************************/
+
+
+
+.partnership-programs h2 {
+  color: #63B2D4;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.partnership-programs p {
+
+font-size: 1.5rem;
+
+}
+
+.partnership-programs .card {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partnership-programs .card-text {
+text-align: justify;
+  font-size: 1rem;
+}
+
+.partnership-programs .card-title {
+color: #49C7C8;
+  font-size: 2rem;
+}
+
+.partnership-programs .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.partnership-programs .apply-btn {
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.partnership-programs .apply-btn:hover {
+  background-color: #0056b3;
+}
+
+.why-partner-section {
+  
+  position: relative;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.why-partner-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.451); /* Overlay effect */
+  z-index: 1;
+}
+
+.why-partner-section .container {
+  position: relative;
+  z-index: 2;
+  
+}
+
+.why-partner-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #63B2D4;
+}
+
+.why-partner-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.why-partner-section strong {
+color: #63B2D4;
+}
