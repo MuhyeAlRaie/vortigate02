@@ -795,6 +795,21 @@ Inner-page
   justify-content: center;
   align-items: center;
 }
+.inner-content .nav-link {
+  background-color: transparent;
+  color: var(--white);
+}
+.inner-content .nav-link.active {
+  background-color: #49C7C8;
+}
+
+.inner-content .nav-link:hover {
+  background-color: #49C7C8;
+}
+.inner-content .tab-pane .list-unstyled i {
+  color: #49C7C8;
+}
+
 .inner-content h2 {
   color: var(--primary-color);
   margin-bottom: 1rem;

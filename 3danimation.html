@@ -77,45 +77,84 @@
 
     </section>
 
-        <!-- Content Section -->
- <section class="inner-content py-5">
-    <div class="container-fluid">
-      <section id="description-section" class="py-4">
-        <div class="container-fluid">
-          <h2 class="mb-4 text-left">3D Animation Services</h2>
-          <img src="assets/img/3dvis-s.png" alt="" class="img-fluid" data-aos="fade" data-aos-duration="1500">
-          <p>We bring ideas to life with high-quality 3D visuals for industries such as real estate, manufacturing, and healthcare.</p>
-  
-          <div class="container-fluid mt-5">
-            <div class="row">
-              <!-- Left Buttons (Top on Mobile) -->
-              <div class="col-12 col-md-4 content-buttons order-1 order-md-0">
-                <button class="btn   mb-2" onclick="showContent(0)"> Product Visualization</button>
-                <button class="btn   mb-2" onclick="showContent(1)"> Architectural Visualization</button>
-                <button class="btn   mb-2" onclick="showContent(2)"> Industrial Equipment Visualization</button>
-                <button class="btn   mb-2" onclick="showContent(3)"> 3D Visualization for Training & Simulation</button>
-                <button class="btn   mb-2" onclick="showContent(4)"> Virtual Tours & Walkthroughs</button>
-              </div>
-  
-              <!-- Right Dynamic Content -->
-              <div class="col-12 col-md-8 content-display order-0 order-md-1">
-                <img id="contentImage" src="assets/img/3dvis-s-product.png" alt="Content Image" class="img-fluid">
-                <h3 id="contentTitle" class="mt-3">Product Visualization</h3>
-                <p id="contentParagraph">Bring products to life with high-quality 3D visualizations that allow customers to interact and explore before purchasing.</p>
+         <!-- Content Section -->
+<section class="inner-content py-5 ">
+  <div class="container">
+    <h2 class="mb-4 text-center text-md-start">3D Animation Services</h2>
+    <div class="text-center mb-4">
+      <img src="assets/img/3dvis-s.png" alt="AR Solutions" class="img-fluid rounded shadow-sm" data-aos="fade" data-aos-duration="1500">
+    </div>
+    <p class="text-center text-md-start">
+      Our 3D animation services bring ideas to life with high-quality visuals, helping
+ businesses communicate, educate, and engage their audiences effectively.
+    </p>
 
-                <ul id="dynamicPoints" class="list-unstyled mt-3">
-                  <li><span class="bi bi-check-circle-fill"></span> Showcase your products in realistic 3D models that highlight details and features from all angles.</li>
-                  <li><span class="bi bi-check-circle-fill"></span> Enable customers to customize products and see changes in real-time, improving their buying experience.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Use advanced rendering techniques to create photorealistic product visuals for marketing and sales.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Integrate 3D visualizations with e-commerce platforms to enhance online shopping and decision-making.</li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
+    <div class="row mt-5">
+      <!-- Navigation Tabs -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="nav flex-column nav-pills" id="ar-tabs" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="tab-ar-0" data-bs-toggle="pill" data-bs-target="#ar-content-0" type="button">3D ANIMATION FOR MARKETING</button>
+          <button class="nav-link" id="tab-ar-1" data-bs-toggle="pill" data-bs-target="#ar-content-1" type="button">3D ANIMATION FOR DEMO</button>
+          <button class="nav-link" id="tab-ar-2" data-bs-toggle="pill" data-bs-target="#ar-content-2" type="button">3D ANIMATION FOR VISUALIZATION</button>
+        
         </div>
-      </section>
+      </div>
 
+      <!-- Tab Content -->
+      <div class="col-md-8">
+        <div class="tab-content  p-4 rounded shadow-sm" id="ar-tabContent">
+          <!-- Content 0 -->
+          <div class="tab-pane fade show active" id="ar-content-0" role="tabpanel">
+            <img src="assets/img/3dvis-s-product.png" class="img-fluid rounded mb-3" alt="">
+            <h3>3D ANIMATION FOR MARKETING</h3>
+            <p> Enhance your brand presence with captivating 3D animations that attract and engage
+ customers.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Engaging Promotional Videos – Create visually stunning 3D animations to showcase products and services in a
+ compelling way.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Brand Storytelling – Use animated content to narrate a brand’s vision and values, making a lasting impression
+ on customers.</li>
+              
+            </ul>
+          </div>
+
+          <!-- Content 1 -->
+          <div class="tab-pane fade" id="ar-content-1" role="tabpanel">
+            <img src="assets/img/3dvis-s-industrial.png" class="img-fluid rounded mb-3" alt="">
+            <h3> 3D ANIMATION FOR DEMO</h3>
+            <p>Simplify complex concepts and showcase your products or services through immersive
+ animated demonstrations</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Interactive Product Demonstrations – Provide a clear and dynamic way to present product functionalities and
+ features.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Training & Instructional Videos – Use 3D animations to explain complex processes and improve user
+ understanding.</li>
+             
+            </ul>
+          </div>
+
+          <!-- Content 2 -->
+          <div class="tab-pane fade" id="ar-content-2" role="tabpanel">
+            <img src="assets/img/3dvis-s-arch.png" class="img-fluid rounded mb-3" alt="">
+            <h3>3D ANIMATION FOR VISUALIZATION</h3>
+            <p> Transform abstract ideas into realistic visual representations with detailed and accurate 3D animations.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Architectural & Industrial Visualization – Bring designs to life with realistic 3D renderings of buildings,
+ machinery, and environments.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Medical & Scientific Animation – Create detailed visual representations for research, education, and
+ presentations.</li>
+             
+            </ul>
+          </div>
+
+
+      
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     
       <div class="usecases container" data-aos="fade-up" data-aos-duration="1500">
         <h2>Use Cases</h2>

@@ -78,45 +78,115 @@
   </section>
 
     <!-- Content Section -->
-<section class="inner-content py-5">
-    <div class="container-fluid">
-      <section id="description-section" class="py-4">
-        <div class="container-fluid">
-          <h2 class="mb-4 text-left">Augmented Reality (AR) Solutions</h2>
-          <img src="assets/img/ar-s.png" alt="" class="img-fluid" data-aos="fade" data-aos-duration="1500">
-          <p>AR enhances real-world environments with digital overlays, offering innovative ways to connect with audiences.</p>
-  
-          <div class="container-fluid mt-5">
-            <div class="row">
-              <!-- Left Buttons (Top on Mobile) -->
-              <div class="col-12 col-md-4 content-buttons order-1 order-md-0">
-                <button class="btn   mb-2" onclick="showContent(0)"> AR Training & Simulation</button>
-                <button class="btn   mb-2" onclick="showContent(1)">Augmented Product Configurators</button>
-                <button class="btn   mb-2" onclick="showContent(2)"> AR Visual Presentations</button>
-                <button class="btn   mb-2" onclick="showContent(3)"> AR for Real Estate and Interior Design</button>
-                <button class="btn   mb-2" onclick="showContent(4)">Web-Based AR Applications</button>
-                <button class="btn  " onclick="showContent(5)">AR Games and Virtual Try-On Features</button>
-              </div>
-  
-              <!-- Right Dynamic Content -->
-              <div class="col-12 col-md-8 content-display order-0 order-md-1">
-                <img id="contentImage" src="assets/img/ar-s-training.png" alt="Content Image" class="img-fluid">
-                <h3 id="contentTitle" class="mt-3">AR Training & Simulation</h3>
-                <p id="contentParagraph">Enhance learning and skill development through augmented environments that overlay digital elements onto the physical world.</p>
+<section class="inner-content py-5 ">
+  <div class="container">
+    <h2 class="mb-4 text-center text-md-start">Augmented Reality (AR) Solutions</h2>
+    <div class="text-center mb-4">
+      <img src="assets/img/ar-s.png" alt="AR Solutions" class="img-fluid rounded shadow-sm" data-aos="fade" data-aos-duration="1500">
+    </div>
+    <p class="text-center text-md-start">
+      AR enhances real-world environments with digital overlays, offering innovative ways to connect with audiences.
+    </p>
 
-                <ul id="dynamicPoints" class="list-unstyled mt-3">
-                  <li><span class="bi bi-check-circle-fill"></span> Create realistic, interactive training experiences for various industries.</li>
-                  <li><span class="bi bi-check-circle-fill"></span> Improve safety and efficiency by simulating complex scenarios in real time.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Enable step-by-step guidance for on-site tasks through AR overlays.</li>
-                  <li><span  class="bi bi-check-circle-fill"></span> Deliver cost-effective, scalable training solutions for diverse sectors.</li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
+    <div class="row mt-5">
+      <!-- Navigation Tabs -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="nav flex-column nav-pills" id="ar-tabs" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="tab-ar-0" data-bs-toggle="pill" data-bs-target="#ar-content-0" type="button">AR Training & Simulation</button>
+          <button class="nav-link" id="tab-ar-1" data-bs-toggle="pill" data-bs-target="#ar-content-1" type="button">Augmented Product Configurators</button>
+          <button class="nav-link" id="tab-ar-2" data-bs-toggle="pill" data-bs-target="#ar-content-2" type="button">AR Visual Presentations</button>
+          <button class="nav-link" id="tab-ar-3" data-bs-toggle="pill" data-bs-target="#ar-content-3" type="button">AR for Real Estate & Design</button>
+          <button class="nav-link" id="tab-ar-4" data-bs-toggle="pill" data-bs-target="#ar-content-4" type="button">Web-Based AR Applications</button>
+          <button class="nav-link" id="tab-ar-5" data-bs-toggle="pill" data-bs-target="#ar-content-5" type="button">AR Games & Try-On</button>
         </div>
-      </section>
+      </div>
 
+      <!-- Tab Content -->
+      <div class="col-md-8">
+        <div class="tab-content  p-4 rounded shadow-sm" id="ar-tabContent">
+          <!-- Content 0 -->
+          <div class="tab-pane fade show active" id="ar-content-0" role="tabpanel">
+            <img src="assets/img/ar-s-training.png" class="img-fluid rounded mb-3" alt="">
+            <h3>AR Training & Simulation</h3>
+            <p>Enhance learning and skill development through augmented environments that overlay digital elements onto the physical world.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Create realistic, interactive training experiences for various industries.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Improve safety and efficiency by simulating complex scenarios in real time.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Enable step-by-step guidance for on-site tasks through AR overlays.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Deliver cost-effective, scalable training solutions for diverse sectors.</li>
+            </ul>
+          </div>
+
+          <!-- Content 1 -->
+          <div class="tab-pane fade" id="ar-content-1" role="tabpanel">
+            <img src="assets/img/ar-s-product.png" class="img-fluid rounded mb-3" alt="">
+            <h3>Augmented Product Configurators</h3>
+            <p>Empower customers to visualize and personalize products in their real-world environments using AR technology.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>View products in their actual space with true scale.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Customize colors, sizes, and features in real time.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Increase buyer confidence and satisfaction.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Integrate seamlessly with e-commerce platforms.</li>
+            </ul>
+          </div>
+
+          <!-- Content 2 -->
+          <div class="tab-pane fade" id="ar-content-2" role="tabpanel">
+            <img src="assets/img/ar-s-visual.png" class="img-fluid rounded mb-3" alt="">
+            <h3>AR Visual Presentations</h3>
+            <p>Bring concepts, designs, and data to life with interactive augmented reality presentations.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Enhance campaigns and learning content with AR visuals.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Showcase products or data with engaging 3D overlays.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Simplify complex topics visually.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Leave a lasting impression in meetings and demos.</li>
+            </ul>
+          </div>
+
+          <!-- Content 3 -->
+          <div class="tab-pane fade" id="ar-content-3" role="tabpanel">
+            <img src="assets/img/ar-s-realestate.png" class="img-fluid rounded mb-3" alt="">
+            <h3>AR for Real Estate and Interior Design</h3>
+            <p>Transform how clients experience properties and interior spaces with augmented reality tools.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Visualize furniture and layouts in real-world settings.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Provide immersive walkthroughs with AR enhancements.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Support design decisions with 3D previews.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Boost client engagement and satisfaction.</li>
+            </ul>
+          </div>
+
+          <!-- Content 4 -->
+          <div class="tab-pane fade" id="ar-content-4" role="tabpanel">
+            <img src="assets/img/ar-s-webar.png" class="img-fluid rounded mb-3" alt="">
+            <h3>Web-Based AR Applications</h3>
+            <p>Deliver powerful AR experiences directly through web browsers without requiring app downloads.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Accessible AR across all major devices and platforms.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Frictionless user onboarding and interaction.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Ideal for marketing, product demos, and training.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Lower adoption barriers for AR solutions.</li>
+            </ul>
+          </div>
+
+          <!-- Content 5 -->
+          <div class="tab-pane fade" id="ar-content-5" role="tabpanel">
+            <img src="assets/img/ar-s-tryon.png" class="img-fluid rounded mb-3" alt="">
+            <h3>AR Games and Virtual Try-On Features</h3>
+            <p>Engage users with interactive AR games and practical try-on tools for products.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Gamify experiences with real-world interaction.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Try-on tools for clothing, accessories, and makeup.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Boost conversion through engaging experiences.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>Drive loyalty with immersive digital campaigns.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     
       <div class="usecases container" data-aos="fade-up" data-aos-duration="1500">
         <h2>Use Cases</h2>

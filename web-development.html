@@ -78,43 +78,85 @@
   </section>
 
       <!-- Content Section -->
-      <section class="inner-content py-5">
-        <div class="container-fluid">
-          <section id="description-section" class="py-4">
-            <div class="container-fluid">
-              <h2 class="mb-4 text-left">Web Development Services</h2>
-              <img src="assets/img/web-s.png" alt="" class="img-fluid" data-aos="fade" data-aos-duration="1500">
-              <p>We deliver state-of-the-art web solutions designed for functionality, aesthetics, and scalability.</p>
-      
-              <div class="container-fluid mt-5">
-                <div class="row">
-                  <!-- Left Buttons (Top on Mobile) -->
-                  <div class="col-12 col-md-4 content-buttons order-1 order-md-0">
-                    <button class="btn   mb-2" onclick="showContent(0)"> Custom Website Development</button>
-                    <button class="btn   mb-2" onclick="showContent(1)"> Interactive Web Applications</button>
-                    <button class="btn   mb-2" onclick="showContent(2)"> E-Commerce Solutions</button>
-                    <button class="btn   mb-2" onclick="showContent(3)"> Web-Based AR and VR Applications</button>
-                    <button class="btn   mb-2" onclick="showContent(4)">Website Maintenance and Support</button>
-                  </div>
-      
-                  <!-- Right Dynamic Content -->
-                  <div class="col-12 col-md-8 content-display order-0 order-md-1">
-                    <img id="contentImage" src="assets/img/web-s-custom.png" alt="Content Image" class="img-fluid">
-                    <h3 id="contentTitle" class="mt-3">Custom Website Development</h3>
-                    <p id="contentParagraph">Design and develop unique, high-performance websites tailored to meet your business objectives and user needs.</p>
-    
-                    <ul id="dynamicPoints" class="list-unstyled mt-3">
-                      <li><span class="bi bi-check-circle-fill"></span> Create fully customized websites that reflect your brand identity and enhance user experience.</li>
-                      <li><span class="bi bi-check-circle-fill"></span> Use responsive design techniques to ensure your website performs seamlessly across all devices.</li>
-                      <li><span  class="bi bi-check-circle-fill"></span> Implement modern development technologies such as HTML5, CSS3, and JavaScript frameworks for an optimized, scalable site.</li>
-                      <li><span  class="bi bi-check-circle-fill"></span> Provide tailored solutions for businesses in various industries, ensuring each website meets functional, aesthetic, and SEO standards.</li>
-                    </ul>
-    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      <section class="inner-content py-5 ">
+  <div class="container">
+    <h2 class="mb-4 text-center text-md-start">Web Development Services</h2>
+    <div class="text-center mb-4">
+      <img src="assets/img/web-s.png" alt="VR Solutions" class="img-fluid rounded shadow-sm" data-aos="fade" data-aos-duration="1500">
+    </div>
+    <p class="text-center text-md-start">
+      We deliver state-of-the-art web solutions designed for functionality, aesthetics, and scalability.
+    </p>
+
+    <div class="row mt-5">
+      <!-- Navigation Tabs -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="nav flex-column nav-pills" id="wd-tabs" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="tab-0" data-bs-toggle="pill" data-bs-target="#content-0" type="button" role="tab">Custom Website Development</button>
+          <button class="nav-link" id="tab-1" data-bs-toggle="pill" data-bs-target="#content-1" type="button" role="tab">Interactive Web Applications</button>
+          <button class="nav-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#content-2" type="button" role="tab">Web-Based AR and VR Applications</button>
+          <button class="nav-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#content-3" type="button" role="tab">Website Maintenance and Support</button>
+        </div>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="col-md-8">
+        <div class="tab-content  p-4 rounded shadow-sm" id="wd-tabContent">
+          <!-- Dynamic VR content blocks -->
+          <div class="tab-pane fade show active" id="content-0" role="tabpanel">
+            <img src="assets/img/web-s-custom.png" class="img-fluid rounded mb-3" alt="">
+            <h3>Custom Website Development</h3>
+            <p>Design and develop unique, high-performance websites tailored to meet your business objectives and user needs.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Create fully customized websites that reflect your brand identity and enhance user experience.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Use responsive design techniques to ensure your website performs seamlessly across all devices.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Implement modern development technologies such as HTML5, CSS3, and JavaScript frameworks for an optimized, scalable site.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Provide tailored solutions for businesses in various industries, ensuring each website meets functional, aesthetic, and SEO standards.</li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="content-1" role="tabpanel">
+            <img src="assets/img/web-s-interactive.png" class="img-fluid rounded mb-3" alt="">
+            <h3>Interactive Web Applications</h3>
+            <p>Build dynamic, interactive web applications that engage users and enhance functionality across platforms.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i>  Develop feature-rich applications with user-friendly interfaces to improve customer engagement and satisfaction.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>  Integrate interactive elements such as real-time updates, drag-and-drop features, and custom animations for an enhanced user experience.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Use frameworks like React, Angular, and Vue.js for seamless interaction and fast performance.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Ideal for businesses needing custom tools, client portals, or interactive content to drive user interaction.</li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="content-2" role="tabpanel">
+            <img src="assets/img/web-s-arvr.png" class="img-fluid rounded mb-3" alt="">
+            <h3>Web-Based AR and VR Applications</h3>
+            <p>Design immersive web-based AR and VR applications that enhance user engagement through virtual and augmented experiences.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Develop cutting-edge AR and VR applications that work seamlessly in web browsers without the need for additional software or hardware.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i>  Provide users with interactive 3D models, virtual try-ons, and realistic simulations accessible through any device with a web browser.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Integrate web-based AR/VR apps with existing websites or e-commerce platforms for an enhanced user experience.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Perfect for industries such as retail, real estate, education, and entertainment looking to offer immersive digital experiences.</li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="content-3" role="tabpanel">
+            <img src="assets/img/web-s-maintenance.png" class="img-fluid rounded mb-3" alt="">
+            <h3>Website Maintenance and Support</h3>
+            <p>Provide ongoing maintenance and support to ensure your website stays up-to-date, secure, and fully functional.</p>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Regularly update website content, security patches, and software to maintain optimal performance.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Troubleshoot and resolve issues quickly, minimizing downtime and improving user satisfaction.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Monitor website performance, optimize loading speeds, and fix any bugs or errors.</li>
+              <li><i class="bi bi-check-circle-fill  me-2"></i> Offer comprehensive support services including content updates, security management, and website backups.</li>
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     
         
           <div class="usecases container" data-aos="fade-up" data-aos-duration="1500">
@@ -245,60 +287,6 @@
     offset: 200,    // Trigger offset in pixels
 });
     </script>
-    <script>
-        // Array of content
-        const content = [
-          {
-            image: "assets/img/web-s-custom.png",
-            title: "Custom Website Development",
-            paragraph: "Design and develop unique, high-performance websites tailored to meet your business objectives and user needs.",
-            points: [" Create fully customized websites that reflect your brand identity and enhance user experience."," Use responsive design techniques to ensure your website performs seamlessly across all devices."," Implement modern development technologies such as HTML5, CSS3, and JavaScript frameworks for an optimized, scalable site."," Provide tailored solutions for businesses in various industries, ensuring each website meets functional, aesthetic, and SEO standards."]    
-          },
-          {
-            image: "assets/img/web-s-interactive.png",
-            title: " Interactive Web Applications",
-            paragraph: "Build dynamic, interactive web applications that engage users and enhance functionality across platforms.",
-            points: [" Develop feature-rich applications with user-friendly interfaces to improve customer engagement and satisfaction."," Integrate interactive elements such as real-time updates, drag-and-drop features, and custom animations for an enhanced user experience."," Use frameworks like React, Angular, and Vue.js for seamless interaction and fast performance."," Ideal for businesses needing custom tools, client portals, or interactive content to drive user interaction."]
-    
-          },
-          {
-            image: "assets/img/web-s-ecommerce.png",
-            title: " E-Commerce Solutions",
-            paragraph: "Create powerful, secure e-commerce platforms that provide a seamless shopping experience for customers.",
-            points: [" Develop custom online stores with user-friendly interfaces, secure payment gateways, and easy product management."," Implement advanced features like product configurators, customer reviews, and personalized recommendations to boost conversions."," Ensure mobile optimization and fast load times to provide an excellent shopping experience on all devices."," Utilize e-commerce platforms like Shopify, WooCommerce, and Magento, or build custom solutions based on your business needs."]
-    
-          },
-          {
-            image: "assets/img/web-s-arvr.png",
-            title: " Web-Based AR and VR Applications",
-            paragraph: "Design immersive web-based AR and VR applications that enhance user engagement through virtual and augmented experiences.",
-            points: [" Develop cutting-edge AR and VR applications that work seamlessly in web browsers without the need for additional software or hardware."," Provide users with interactive 3D models, virtual try-ons, and realistic simulations accessible through any device with a web browser."," Integrate web-based AR/VR apps with existing websites or e-commerce platforms for an enhanced user experience."," Perfect for industries such as retail, real estate, education, and entertainment looking to offer immersive digital experiences."]
-    
-          },
-          {
-            image: "assets/img/web-s-maintenance.png",
-            title: " Website Maintenance and Support",
-            paragraph: "Provide ongoing maintenance and support to ensure your website stays up-to-date, secure, and fully functional.",
-            points: [" Regularly update website content, security patches, and software to maintain optimal performance."," Troubleshoot and resolve issues quickly, minimizing downtime and improving user satisfaction."," Monitor website performance, optimize loading speeds, and fix any bugs or errors."," Offer comprehensive support services including content updates, security management, and website backups."]
-          }
-        ];
-      
-        // Function to display content
-        function showContent(index) {
-          document.getElementById('contentImage').src = content[index].image;
-          document.getElementById('contentTitle').textContent = content[index].title;
-          document.getElementById('contentParagraph').textContent = content[index].paragraph;
-    
-              // Update Points
-        const pointsList = document.getElementById('dynamicPoints');
-        pointsList.innerHTML = content[index].points
-          .map(point => `<li><span  class="bi bi-check-circle-fill"></span> ${point}</li>`)
-          .join("");
-      
-        }
-    
-        
-      </script>
-
+   
 </body>
 </html>
