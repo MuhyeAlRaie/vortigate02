@@ -265,6 +265,12 @@ preloder
       font-size: 4rem;
     }  
 }
+@media (max-width:390px) {
+    .hero-title {
+     
+      font-size: 3rem;
+    }  
+}
 
 
 .hero-content p { 
