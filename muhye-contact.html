@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محي الدين الراعي - روابط مهنية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eaf6 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            transition: font-family 0.3s ease;
+        }
+        
+        body.english {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            padding: 35px 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #63B2D4, #9B86ED);
+        }
+        
+        .language-switcher {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 10;
+        }
+        
+        .language-switcher button {
+            background: none;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 5px 12px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .language-switcher button:hover {
+            background-color: #f1f3f5;
+        }
+        
+        .company-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto 15px;
+            border: 4px solid #f0f0f0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .person-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .company-name {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        
+        .welcome-message {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 15px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .link-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #f1f3f5;
+        }
+        
+        .link-button i {
+            font-size: 18px;
+            width: 22px;
+            text-align: center;
+        }
+        
+        .website {
+            color: #63B2D4;
+        }
+        
+        .profile {
+            color: #63B2D4;
+        }
+        
+        .vcard {
+            color: #63B2D4;
+        }
+        
+        .whatsapp {
+            color: #25D366;
+        }
+        
+        .email {
+            color: #9B86ED;
+        }
+        
+        .instagram {
+            color: #E4405F;
+        }
+        
+        .linkedin {
+            color: #0077B5;
+        }
+        
+        .footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #999;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .contact-item i {
+            width: 18px;
+            color: #63B2D4;
+        }
+        
+        /* LTR adjustments */
+        [dir="ltr"] .language-switcher {
+            left: auto;
+            right: 15px;
+        }
+        
+        [dir="ltr"] .link-button {
+            flex-direction: row;
+        }
+        
+        [dir="ltr"] .contact-item {
+            flex-direction: row;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 20px;
+            }
+            
+            .person-name {
+                font-size: 22px;
+            }
+            
+            .welcome-message {
+                font-size: 14px;
+            }
+            
+            .language-switcher button {
+                font-size: 11px;
+                padding: 4px 8px;
+            }
+            
+            .company-logo {
+                width: 90px;
+                height: 90px;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .person-name {
+                font-size: 20px;
+            }
+            
+            .company-name {
+                font-size: 15px;
+            }
+            
+            .welcome-message {
+                font-size: 13px;
+            }
+            
+            .link-button {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            
+            .link-button i {
+                font-size: 16px;
+                width: 20px;
+            }
+            
+            .contact-item {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <button id="langToggle">
+                <i class="fas fa-globe"></i>
+                <span>English</span>
+            </button>
+        </div>
+        
+        <img src="assets/img/logo-co.jpg" alt="فورتيجيت" class="company-logo" id="companyLogo">
+        
+        <h1 class="person-name" id="personName">محي الدين الراعي</h1>
+        <h2 class="company-name" id="companyName">فورتيجيت</h2>
+        
+        <p class="welcome-message" id="welcomeMessage">
+            تأسست في عام 2025 ومقرها في عمان، الأردن، فورتيجيت هي شركة تكنولوجيا رائدة متخصصة في الحلول الغامرة. نحن ملتزمون بتحويل الشركات من خلال التقنيات المتطورة مثل الواقع الافتراضي (VR) والواقع المعزز (AR) والواقع المختلط (MR). خدماتنا المبتكرة تخدم الصناعات في جميع أنحاء المملكة العربية السعودية ودبي والأردن، مما يساعد الشركات على تقديم تجارب عملاء لا مثيل لها وكفاءة تشغيلية.
+        </p>
+        
+        <div class="buttons-container">
+            <a href="#" target="_blank" class="link-button website" id="websiteButton">
+                <i class="fas fa-globe"></i>
+                <span id="websiteButtonText">موقع الشركة</span>
+            </a>
+            
+            <a href="https://drive.google.com/file/d/1FiX8oCl-QhEPuKQCeqcJ-rEb2AZSkq9u/view?usp=sharing" target="_blank" class="link-button profile" id="profileButton">
+                <i class="fas fa-file-pdf"></i>
+                <span id="profileButtonText">الملف الشخصي كـ PDF</span>
+            </a>
+            
+            <a href="#" class="link-button vcard" id="vcardButton">
+                <i class="fas fa-address-card"></i>
+                <span id="vcardButtonText">حفظ جهة الاتصال (vCard)</span>
+            </a>
+            
+            <a href="https://wa.me/962781313782" target="_blank" class="link-button whatsapp" id="whatsappButton">
+                <i class="fab fa-whatsapp"></i>
+                <span id="whatsappButtonText">واتساب</span>
+            </a>
+            
+            <a href="mailto:mr@vortigate.com" class="link-button email" id="emailButton">
+                <i class="fas fa-envelope"></i>
+                <span id="emailButtonText">بريد إلكتروني</span>
+            </a>
+            
+            <a href="https://www.instagram.com/vortigate/" target="_blank" class="link-button instagram" id="instagramButton">
+                <i class="fab fa-instagram"></i>
+                <span id="instagramButtonText">انستغرام</span>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/muhye-aldeen-alraie/" target="_blank" class="link-button linkedin" id="linkedinButton">
+                <i class="fab fa-linkedin"></i>
+                <span id="linkedinButtonText">لينكدإن</span>
+            </a>
+        </div>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span id="contactEmail">mr@vortigate.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span id="contactPhone">+962781313782</span>
+            </div>
+             <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span id="contactPhoneSA">+966537920323</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p id="footerText">© 2025 فورتيجيت. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+
+    <script>
+        // vCard data
+        const vCardData = `BEGIN:VCARD
+VERSION:3.0
+N:Alraie;Muhye Aldeen;;;
+FN:Muhye Aldeen Alraie
+ORG:Vortigate
+EMAIL;TYPE=INTERNET:mr@vortigate.com
+TEL;TYPE=CELL:+962781313782
+URL:https://www.instagram.com/vortigate/
+URL:https://www.linkedin.com/in/muhye-aldeen-alraie/
+END:VCARD`;
+
+        // Translations
+        const translations = {
+            ar: {
+                personName: "محي الدين الراعي",
+                companyName: "فورتيجيت",
+                welcomeMessage: "تأسست في عام 2025 ومقرها في عمان، الأردن، فورتيجيت هي شركة تكنولوجيا رائدة متخصصة في الحلول الغامرة. نحن ملتزمون بتحويل الشركات من خلال التقنيات المتطورة مثل الواقع الافتراضي (VR) والواقع المعزز (AR) والواقع المختلط (MR). خدماتنا المبتكرة تخدم الصناعات في جميع أنحاء المملكة العربية السعودية ودبي والأردن، مما يساعد الشركات على تقديم تجارب عملاء لا مثيل لها وكفاءة تشغيلية.",
+                websiteButtonText: "موقع الشركة",
+                profileButtonText: "الملف الشخصي كـ PDF",
+                vcardButtonText: "حفظ جهة الاتصال (vCard)",
+                whatsappButtonText: "واتساب",
+                emailButtonText: "بريد إلكتروني",
+                instagramButtonText: "انستغرام",
+                linkedinButtonText: "لينكدإن",
+                footerText: "© 2025 فورتيجيت. جميع الحقوق محفوظة.",
+                contactEmail: "mr@vortigate.com",
+                contactPhone: "+962781313782",
+                contactPhoneSA: "+966537920323",
+                langToggle: "English",
+                logoAlt: "فورتيجيت"
+            },
+            en: {
+                personName: "Muhye Aldeen Alraie",
+                companyName: "Vortigate",
+                welcomeMessage: "Founded in 2025 and based in Amman, Jordan, Vortigate is a pioneering technology company specializing in immersive solutions. We are committed to transforming businesses through cutting-edge technologies such as Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR). Our innovative services cater to industries across Saudi Arabia, Dubai, and Jordan, helping businesses deliver unparalleled customer experiences and operational efficiency.",
+                websiteButtonText: "Company Website",
+                profileButtonText: "Profile as PDF",
+                vcardButtonText: "Save Contact (vCard)",
+                whatsappButtonText: "WhatsApp",
+                emailButtonText: "Email",
+                instagramButtonText: "Instagram",
+                linkedinButtonText: "LinkedIn",
+                footerText: "© 2025 Vortigate. All rights reserved.",
+                contactEmail: "mr@vortigate.com",
+                contactPhone: "+962781313782",
+                contactPhoneSA: "+966537920323",
+                langToggle: "العربية",
+                logoAlt: "Vortigate"
+            }
+        };
+
+        // Configuration
+        const config = {
+            companyLogo: "assets/img/logo-co.jpg", // Replace with your company logo URL
+            companyWebsite: "https://www.vortigate.com/", // Replace with your company website URL
+            profilePdfUrl: "https://drive.google.com/file/d/1FiX8oCl-QhEPuKQCeqcJ-rEb2AZSkq9u/view?usp=sharing",
+            whatsappUrl: "https://wa.me/962781313782",
+            emailUrl: "mailto:mr@vortigate.com",
+            instagramUrl: "https://www.instagram.com/vortigate/",
+            linkedinUrl: "https://www.linkedin.com/in/muhye-aldeen-alraie/"
+        };
+
+        // Language functions
+        function setLanguage(lang) {
+            const isEnglish = lang === 'en';
+            document.documentElement.setAttribute('dir', isEnglish ? 'ltr' : 'rtl');
+            document.documentElement.setAttribute('lang', lang);
+            document.body.classList.toggle('english', isEnglish);
+            
+            // Update all text content
+            document.getElementById('personName').textContent = translations[lang].personName;
+            document.getElementById('companyName').textContent = translations[lang].companyName;
+            document.getElementById('welcomeMessage').textContent = translations[lang].welcomeMessage;
+            document.getElementById('websiteButtonText').textContent = translations[lang].websiteButtonText;
+            document.getElementById('profileButtonText').textContent = translations[lang].profileButtonText;
+            document.getElementById('vcardButtonText').textContent = translations[lang].vcardButtonText;
+            document.getElementById('whatsappButtonText').textContent = translations[lang].whatsappButtonText;
+            document.getElementById('emailButtonText').textContent = translations[lang].emailButtonText;
+            document.getElementById('instagramButtonText').textContent = translations[lang].instagramButtonText;
+            document.getElementById('linkedinButtonText').textContent = translations[lang].linkedinButtonText;
+            document.getElementById('footerText').textContent = translations[lang].footerText;
+            document.getElementById('contactEmail').textContent = translations[lang].contactEmail;
+            document.getElementById('contactPhone').textContent = translations[lang].contactPhone;
+            document.getElementById('langToggle').querySelector('span').textContent = translations[lang].langToggle;
+            document.getElementById('companyLogo').alt = translations[lang].logoAlt;
+            
+            // Save language preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        function toggleLanguage() {
+            const currentLang = document.documentElement.getAttribute('lang');
+            const newLang = currentLang === 'ar' ? 'en' : 'ar';
+            setLanguage(newLang);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial language to Arabic by default
+            const savedLanguage = localStorage.getItem('preferredLanguage') || 'ar';
+            setLanguage(savedLanguage);
+            
+            // Set the content
+            document.getElementById('companyLogo').src = config.companyLogo;
+            document.getElementById('websiteButton').href = config.companyWebsite;
+            document.getElementById('profileButton').href = config.profilePdfUrl;
+            document.getElementById('whatsappButton').href = config.whatsappUrl;
+            document.getElementById('emailButton').href = config.emailUrl;
+            document.getElementById('instagramButton').href = config.instagramUrl;
+            document.getElementById('linkedinButton').href = config.linkedinUrl;
+            
+            // Language toggle event
+            document.getElementById('langToggle').addEventListener('click', toggleLanguage);
+            
+            // vCard download functionality - works on all devices
+            document.getElementById('vcardButton').addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Create vCard file
+                const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                
+                // Create download link
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'Muhye_Aldeen_Alraie.vcf';
+                
+                // For mobile devices, sometimes we need to trigger differently
+                if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+                    // For iOS devices
+                    const reader = new FileReader();
+                    reader.onloadend = function() {
+                        if (reader.result) {
+                            window.location.href = reader.result;
+                        }
+                    };
+                    reader.readAsDataURL(blob);
+                } else {
+                    // For other devices
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+                
+                // Clean up
+                setTimeout(() => {
+                    URL.revokeObjectURL(url);
+                }, 100);
+                
+                console.log('vCard downloaded');
+            });
+            
+            // Add event listeners for tracking clicks (optional)
+            document.getElementById('websiteButton').addEventListener('click', function() {
+                console.log('Website button clicked');
+            });
+
+            document.getElementById('profileButton').addEventListener('click', function() {
+                console.log('Profile PDF button clicked');
+            });
+
+            document.getElementById('whatsappButton').addEventListener('click', function() {
+                console.log('WhatsApp button clicked');
+            });
+
+            document.getElementById('emailButton').addEventListener('click', function() {
+                console.log('Email button clicked');
+            });
+
+            document.getElementById('instagramButton').addEventListener('click', function() {
+                console.log('Instagram button clicked');
+            });
+
+            document.getElementById('linkedinButton').addEventListener('click', function() {
+                console.log('LinkedIn button clicked');
+            });
+        });
+    </script>
+</body>
+</html>
